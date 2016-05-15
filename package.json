@@ -11,6 +11,9 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "ruby": "~0.6.0",
+    "compass": "~0.1.1",
+    "grunt-cli": "~1.2.0"
   }
 }
