@@ -1,11 +1,10 @@
 /**
  * Created by shlomit.c on 17/05/2016.
  */
-(function() {
+(function () {
+    'use strict';
 
-    var Clotika = angular.module('Clotika', [
-        'ui.router'
-    ]);
+    var Clotika = angular.module('Clotika', ['ui.router']);
 
     Clotika.config(function($urlRouterProvider, $stateProvider){
         $stateProvider
@@ -20,5 +19,4 @@
             })
         ;
     })
-
-})
+})();
