@@ -15,5 +15,9 @@
     "ruby": "~0.6.0",
     "compass": "~0.1.1",
     "grunt-cli": "~1.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0"
   }
 }
