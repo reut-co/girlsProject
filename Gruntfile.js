@@ -10,10 +10,29 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['public/**/*.js'],
-                tasks: ['concat'],
+                files: ['public/js/**/*.js'],
+                tasks: ['concat','uglify'],
                 options: {
                     spawn: false
+                }
+            }
+        },
+        concat: {
+            options: {
+                separator: ';'
+            },
+            dist: {
+                src: ['<%= watch.scripts.files %>'],
+                dest: 'public/build/main.js'
+            }
+        },
+        uglify: {
+            my_target: {
+                files: {
+                    'public/build/main.min.js': ['<%= concat.dist.dest %>']
+                },
+                options: {
+                    sourceMap: true
                 }
             }
         }
