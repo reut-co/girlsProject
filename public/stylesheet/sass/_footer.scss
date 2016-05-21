@@ -1,3 +1,12 @@
-.footer{
+/*#wrap > .container
+{
+    padding: 60px 15px 0;
+}*/
+
+#footer{
     background-color: $footerBackground;
+    height: $footerHeight;
+    .container {
+        padding:0 15px;
+    }
 }
