@@ -6,7 +6,7 @@
 
     var Clotika = angular.module('Clotika', ['ui.router']);
 
-    var baseDir = "/js/";
+    var baseDir = "/pages/";
     var homeDir = baseDir + "dashboard/";
     var viewItemsDir = baseDir + "viewItems/";
 

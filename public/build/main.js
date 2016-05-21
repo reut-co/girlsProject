@@ -6,7 +6,7 @@
 
     var Clotika = angular.module('Clotika', ['ui.router']);
 
-    var baseDir = "/js/";
+    var baseDir = "/pages/";
     var homeDir = baseDir + "dashboard/";
     var viewItemsDir = baseDir + "viewItems/";
 
@@ -39,16 +39,5 @@
 
         var vm = this;
 
-    }]);
-}());;/**
- * Created by shlomit.c on 21/05/2016.
- */
-(function() {
-    var Clotika = angular.module('Clotika');
-    Clotika.controller('ViewItemsCtrl', ['$stateParams', function ($stateParams) {
-
-        var vm = this;
-
-        vm.bla = $stateParams.itemType;
     }]);
 }());
