@@ -10,12 +10,32 @@
   float: right;
   height: 100%; }
 
-.footer {
-  background-color: #2f2e2e; }
+/*#wrap > .container
+{
+    padding: 60px 15px 0;
+}*/
+#footer {
+  background-color: #2f2e2e;
+  height: 60px; }
+  #footer .container {
+    padding: 0 15px; }
 
+html,
 body {
-  padding-top: 70px;
-  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
+  height: 100%;
+  /* The html and body elements cannot have any
+padding or margin. */ }
+
+/* Wrapper for page content to push down
+footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px; }
 
 .noMargin {
   margin: 0 !important; }
