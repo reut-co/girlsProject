@@ -4,9 +4,13 @@
 }*/
 #footer {
   background-color: #2f2e2e;
-  height: 60px; }
+  height: 300px;
+  color: #939393;
+  padding-top: 50px; }
   #footer .container {
     padding: 0 15px; }
+  #footer .title {
+    font-size: 17px; }
 
 .mainVideoWrap {
   height: 250px;
@@ -28,6 +32,9 @@
   .comingEvents .subTitle {
     font-size: 1rem; }
 
+.dashboardContainer {
+  margin-top: 20px; }
+
 html,
 body {
   height: 100%;
@@ -41,22 +48,15 @@ footer */
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -60px;
+  margin: 0 auto -300px;
   /* Pad bottom by footer height */
-  padding: 0 0 60px; }
+  padding: 0 0 300px; }
 
 .noMargin {
   margin: 0 !important; }
 
-.absoluteVerticalAlign {
-  margin-top: 0 !important;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.clotikaContainer {
+.clotikaContainer, .dashboardContainer {
   max-width: 1000px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto; }
 

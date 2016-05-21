@@ -1,5 +1,5 @@
 // =============== sizes
-$footerHeight: 60px;
+$footerHeight: 300px;
 
 // =============== imports
 @import "colors";
@@ -36,16 +36,9 @@ footer */
     margin: 0 !important;
 }
 
-.absoluteVerticalAlign {
-    margin-top: 0 !important;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 .clotikaContainer{
     max-width: 1000px;
-    margin-top:20px;
     margin-left: auto;
     margin-right: auto;
 }

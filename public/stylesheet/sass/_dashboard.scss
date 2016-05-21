@@ -15,7 +15,6 @@
     background-color: #3E3C3C;
 }
 
-
 .comingEvents{
     text-align: center;
 
@@ -25,4 +24,9 @@
     .subTitle{
         font-size: remCalc(16px);
     }
+}
+
+.dashboardContainer{
+    @extend .clotikaContainer;
+    margin-top:20px;
 }
