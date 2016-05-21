@@ -6,7 +6,12 @@
 #footer{
     background-color: $footerBackground;
     height: $footerHeight;
+    color: $footerTextColor;
+    padding-top: 50px;
     .container {
         padding:0 15px;
+    }
+    .title{
+        font-size: 17px;
     }
 }
