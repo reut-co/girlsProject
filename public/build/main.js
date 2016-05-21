@@ -7,13 +7,14 @@
     var Clotika = angular.module('Clotika', ['ui.router']);
 
     var baseDir = "/js/";
+    var homeDir = baseDir + "home/";
+    var viewItemsDir = baseDir + "viewItems/";
 
     Clotika.config(function($urlRouterProvider, $stateProvider){
         $stateProvider
             .state('home', {
                 url: '/',
-                template:'<div>home</div>'
-                //templateUrl: ''
+                templateUrl: homeDir + 'templates/home.html'
             })
            /* .state('login', {
                 url: '/login',
@@ -21,12 +22,25 @@
             })*/
             .state('viewItems', {
                 url: 'viewItems/:itemType', // itemType options: clothes, bags, accessories
-                templateUrl: baseDir + 'viewItems/templates/viewItems.html'
+                templateUrl: viewItemsDir + 'templates/viewItems.html'
             })
         ;
     })
 })();
 ;/**
+ * Created by shlomit.c on 21/05/2016.
+ */
+/**
+ * Created by shlomit.c on 21/05/2016.
+ */
+(function() {
+    var Clotika = angular.module('Clotika');
+    Clotika.controller('HomeCtrl', ['$stateParams', function ($stateParams) {
+
+        var vm = this;
+
+    }]);
+}());;/**
  * Created by shlomit.c on 21/05/2016.
  */
 (function() {
