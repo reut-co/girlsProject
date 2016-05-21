@@ -1,7 +1,12 @@
 @import "colors";
-@import 'dashboard';
 @import "footer";
 
+$em-base: 16px; // This is the default html and body font-size for the base em value.
+@function remCalc($pxWidth) {
+    @return $pxWidth / $em-base * 1rem;
+}
+
+@import 'dashboard';
 
 body {
     padding-top: 70px;

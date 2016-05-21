@@ -1,3 +1,6 @@
+.footer {
+  background-color: #2f2e2e; }
+
 .mainVideoWrap {
   height: 250px;
   overflow: hidden; }
@@ -5,13 +8,18 @@
     width: 100%;
     opacity: 0.5; }
 
-.shoppingWithBestiz {
-  display: inline-block;
-  float: right;
-  height: 100%; }
+.shoppingWithBestizContainer {
+  background-color: #F5F5F5; }
 
-.footer {
-  background-color: #2f2e2e; }
+.sellContainer {
+  background-color: #3E3C3C; }
+
+.comingEvents {
+  text-align: center; }
+  .comingEvents .mainTitle {
+    font-size: 1.25rem; }
+  .comingEvents .subTitle {
+    font-size: 1rem; }
 
 body {
   padding-top: 70px;

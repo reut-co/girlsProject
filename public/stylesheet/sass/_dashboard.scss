@@ -7,8 +7,22 @@
     }
 }
 
-.shoppingWithBestiz{
-    display: inline-block;
-    float: right;
-    height: 100%;
+.shoppingWithBestizContainer{
+    background-color: #F5F5F5;
+}
+
+.sellContainer{
+    background-color: #3E3C3C;
+}
+
+
+.comingEvents{
+    text-align: center;
+
+    .mainTitle{
+        font-size: remCalc(20px);
+    }
+    .subTitle{
+        font-size: remCalc(16px);
+    }
 }
