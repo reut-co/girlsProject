@@ -6,33 +6,49 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        uglify: {
-        },
-        watch: {
-            scripts: {
-                files: ['public/js/**/*.js'],
-                tasks: ['concat','uglify'],
-                options: {
-                    spawn: false
-                }
-            }
-        },
         concat: {
             options: {
                 separator: ';'
             },
-            dist: {
+            scripts: {
                 src: ['<%= watch.scripts.files %>'],
                 dest: 'public/build/main.js'
+            },
+            css:{
+                src: ['<%= watch.css.files %>'],
+                dest: 'public/stylesheet/main.scss'
             }
         },
         uglify: {
             my_target: {
                 files: {
-                    'public/build/main.min.js': ['<%= concat.dist.dest %>']
+                    'public/build/main.min.js': ['<%= concat.scripts.dest %>']
                 },
                 options: {
                     sourceMap: true
+                }
+            }
+        },
+        watch: {
+            scripts: {
+                files: ['public/js/**/*.js'],
+                tasks: ['concat:scripts','uglify'],
+                options: {
+                    spawn: false
+                }
+            },
+            css: {
+                files: ['public/stylesheet/sass/**/*.scss'],
+                tasks: ['concat:css','sass'],
+                options: {
+                    livereload: true
+                }
+            }
+        },
+        sass: {
+            dist: {
+                files: {
+                    'public/stylesheet/main.css': 'public/stylesheet/main.scss'
                 }
             }
         }
@@ -42,9 +58,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
-    // Default task(s).
-    grunt.registerTask('default', ['watch']);
+    // Default task(s) - js build
+    grunt.registerTask('default', ['watch:scripts']);
+
+    grunt.registerTask('css', ['watch:css']); //css build
 
 
 };
