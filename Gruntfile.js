@@ -13,10 +13,6 @@ module.exports = function(grunt) {
             scripts: {
                 src: ['<%= watch.scripts.files %>'],
                 dest: 'public/build/main.js'
-            },
-            css:{
-                src: ['<%= watch.css.files %>'],
-                dest: 'public/stylesheet/main.scss'
             }
         },
         uglify: {
@@ -39,7 +35,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['public/stylesheet/sass/**/*.scss'],
-                tasks: ['concat:css','sass'],
+                tasks: ['sass'],
                 options: {
                     livereload: true
                 }
@@ -48,7 +44,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/stylesheet/main.css': 'public/stylesheet/main.scss'
+                    'public/stylesheet/main.css': 'public/stylesheet/sass/main.scss'
                 }
             }
         }
