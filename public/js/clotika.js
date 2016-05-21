@@ -7,14 +7,14 @@
     var Clotika = angular.module('Clotika', ['ui.router']);
 
     var baseDir = "/js/";
-    var homeDir = baseDir + "home/";
+    var homeDir = baseDir + "dashboard/";
     var viewItemsDir = baseDir + "viewItems/";
 
     Clotika.config(function($urlRouterProvider, $stateProvider){
         $stateProvider
-            .state('home', {
+            .state('dashboard', {
                 url: '/',
-                templateUrl: homeDir + 'templates/home.html'
+                templateUrl: homeDir + 'templates/dashboard.html'
             })
            /* .state('login', {
                 url: '/login',
