@@ -10,7 +10,7 @@
     var homeDir = baseDir + "dashboard/";
     var viewItemsDir = baseDir + "viewItems/";
 
-    Clotika.config(function($urlRouterProvider, $stateProvider){
+    Clotika.config(function($urlRouterProvider, $stateProvider,$locationProvider){
         $stateProvider
             .state('dashboard', {
                 url: '/',
@@ -25,5 +25,7 @@
                 templateUrl: viewItemsDir + 'templates/viewItems.html'
             })
         ;
+
+        $locationProvider.html5Mode(true);
     })
 })();
