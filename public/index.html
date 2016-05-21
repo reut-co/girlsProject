@@ -5,8 +5,16 @@
         <meta name="keywords" content="">
         <title></title>
     </head>
-    <body>
+    <body ng-app="Clotika">
         <h1>Clotika is up</h1>
+        <a ui-sref="login">login</a>
+
+
+        <ui-view></ui-view>
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js" type="text/javascript"></script>
+
+        <script src="build/main.js"></script>
     </body>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </html>
